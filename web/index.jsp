@@ -21,9 +21,9 @@
 	<form id="test" action="${submitUrl}" method="POST">
 		<label for="first">first</label>
 		<input id="first" name="first" type="text" />
-		<input name="commit" type="submit" value="submit" />
-		<input name="andereCommit" type="submit" value="bla" />
-		<button id="forceSubmit">force</button>
+		<input class="button" name="commit" type="submit" value="submit" />
+		<input class="button" name="andereCommit" type="submit" value="bla" />
+		<button id="forceSubmit" class="button">force</button>
 	</form>
 
 	<script type="text/javascript">

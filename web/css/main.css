@@ -13,24 +13,17 @@
 img {
 	border: none;
 }
+
 body {
 	font-family: 'droid_sansregular';
 	color: #444444;
 	padding: 0;
-	margin: 0;
+	width: 80%;
+	margin: auto;
 }
 
 html, body {
 	height: 100%;
-}
-
-dt, dd {
-	margin-left: 0;
-}
-
-dt {
-	font-weight: bold;
-	margin-top: 0.5rem;
 }
 
 .center {
@@ -41,40 +34,16 @@ dt {
 	display: none;
 }
 
-section.main {
-	min-height: calc(100% - 300px);
-}
-section.main::after {
-	content: " ";
-	display: table;
-}
-
-footer {
-	min-height: 231px;
-}
-
-menu {
-	min-height: 3.5rem;
-}
-
 p {
 	text-align: justify;
 }
 
-h1.none {
-	text-align: center;
+h1 {
+	font-size: 1rem;
 }
 
 .note {
 	margin: 0.5rem 0;
-}
-
-body > section, body > header {
-	margin: 0 5rem;
-}
-
-body > footer {
-	padding: 0 5rem;
 }
 
 .small {

@@ -14,7 +14,7 @@
 
 <body>
 	<c:url value="/" var="rootUrl" />
-	<a href="${rootUrl}">home</a>
+	<a class="button" href="${rootUrl}">home</a><br />
 	counter reset
 </body>
 </html>

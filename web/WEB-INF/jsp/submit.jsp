@@ -14,37 +14,29 @@
 
 <body>
 	<c:url value="/" var="rootUrl" />
-	<a href="${rootUrl}">home</a>
-
-	<parts:debug />
-
-	<h1>Current Count</h1>
+	<a class="button" href="${rootUrl}">home</a>
 
 	<c:url value="/reset" var="resetUrl" />
-	${counter.count}<a href="${resetUrl}">reset</a>
+	<h1><a class="button" href="${resetUrl}">reset</a> Current Count: ${counter.count}</h1>
 
-	<h1>params</h1>
-	
-	<div>
-		<h3>Params</h3>
-		${param}
-		<table class="fancy">
-			<thead> 
-				<tr>
+	<h1>Params</h1>
+
+	<table class="fancy">
+		<thead> 
+			<tr>
 				<th style="width: 25%;">key</th>
 				<th style="width: 75%;">values</th>
-				</tr>
-			</thead>
-			<tbody>
-			<c:forEach var="name" items="${param}">
-				<tr>
-					<td class="center"><c:out value="${name.key}" /></td>
-					<td><c:out value="${name.value}" /></td>
-				</tr>
-			</c:forEach>
-			</tbody>
-		</table>
-	</div>
+			</tr>
+		</thead>
+		<tbody>
+		<c:forEach var="name" items="${param}">
+			<tr>
+				<td class="center"><c:out value="${name.key}" /></td>
+				<td><c:out value="${name.value}" /></td>
+			</tr>
+		</c:forEach>
+		</tbody>
+	</table>
 </body>
 
 </html>
