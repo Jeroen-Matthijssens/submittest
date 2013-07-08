@@ -1,0 +1,82 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+	font-family: 'droid_sansregular';
+	src: url('../fonts/DroidSans.ttf');
+}
+
+@font-face {
+	font-family: 'bedas';
+	src: url('../fonts/bedas.ttf');
+}
+
+img {
+	border: none;
+}
+body {
+	font-family: 'droid_sansregular';
+	color: #444444;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+dt, dd {
+	margin-left: 0;
+}
+
+dt {
+	font-weight: bold;
+	margin-top: 0.5rem;
+}
+
+.center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+section.main {
+	min-height: calc(100% - 300px);
+}
+section.main::after {
+	content: " ";
+	display: table;
+}
+
+footer {
+	min-height: 231px;
+}
+
+menu {
+	min-height: 3.5rem;
+}
+
+p {
+	text-align: justify;
+}
+
+h1.none {
+	text-align: center;
+}
+
+.note {
+	margin: 0.5rem 0;
+}
+
+body > section, body > header {
+	margin: 0 5rem;
+}
+
+body > footer {
+	padding: 0 5rem;
+}
+
+.small {
+	font-size: 0.7rem;
+}

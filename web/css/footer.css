@@ -1,0 +1,5 @@
+footer {
+	border-top: 1px solid white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(210, 210, 210));
+}

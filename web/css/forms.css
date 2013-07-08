@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+
+.inline {
+	display: inline;
+}
+
+form {
+	width: 100%;
+	max-width: 350px;
+}
+
+input:not([type=checkbox]):not([type=submit]):not([type=button]), form textarea {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0.1rem 0.8rem;
+	width: calc(100% - 0.4rem - 1.6rem);
+}
+
+textarea {
+	height: 4em;
+}
+
+input[type=submit] {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+input:not([type="checkbox"]), label {
+	display: block;
+}
+
+input:not([type=sumbit]), textarea {
+	margin-bottom: 1rem;
+}
+
+form div.separator {
+	height: 0;
+	border-top: 0.3rem solid #dddddd;
+	margin-bottom: 1rem;
+}
+
+form input {
+	border: 0.1rem solid;
+	border-color: #dddddd;
+}
+
+form input.required {
+	border-color: #ba0000;
+}
+
+form span.error {
+	color: red;
+}
+
+form img.marker {
+	height: 0.8rem;
+	text-align: middle:
+}

@@ -1,0 +1,80 @@
+@CHARSET "ISO-8859-1";
+
+.menu {
+	margin: 0;
+	padding: 0 5rem;
+	margin-bottom: 0.8rem;
+	border-bottom: 0.1rem solid white;
+	box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
+	background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(210, 210, 210));
+	height: 3.5rem;
+}
+
+.menu li {
+	display: inline-block;
+	height: 100%;
+	float: left;
+}
+
+.menu > li > a {
+	display: inline-block;
+	text-decoration: none;
+	color: #444444;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding: 0 0.8rem;
+	padding-top: 1.5rem;
+	height: calc(100% - 1.5rem);
+	border-left: 1px solid rgb(200, 200, 200);
+}
+
+.menu > li.last > a,
+.menu > li:last-child > a {
+	border-right: 0.1rem solid rgb(200, 200, 200);
+}
+
+.menu > li.active > a,
+.menu > li:hover > a {
+	color: #666666;
+	background: linear-gradient(to left
+		, rgba(150, 150, 150, 0.4)
+		, rgba(182, 182, 182, 0.5) 40%
+		, rgba(182, 182, 182, 0.5) 60%
+		, rgba(150, 150, 150, 0.4)
+		);
+}
+
+.menu > li img {
+	height: 1.3rem;
+	vertical-align: middle;
+}
+
+.menu > li.right {
+	float: right;
+}
+
+.menu > li.right > a {
+	float: right;
+}
+
+.menu .login {
+	float:right;
+	position: absolute;
+	width: 16rem;
+	top: 3.5rem;
+	left: calc(100% - 16rem - 5rem - 2.2rem);
+	background: rgb(250, 250, 250);
+	border: 0.1rem solid white;
+	border-top: 0;
+	box-shadow: inset 0 0 0.8rem rgba(0, 0, 0, 0.4);
+	padding: 1.3rem 1.1rem;
+}
+
+.menu > li:hover .login {
+	visibility: inherit;
+	display: inherit;
+}
+
+form.login .button {
+	margin-bottom: 0;
+}

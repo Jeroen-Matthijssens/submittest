@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+
+[data-toggle=parent-collapsed] :not([data-toggle=click]):not([data-toggle=keep]):not([data-toggle=clear-click]) {
+	display: none;
+}
+
+[data-toggle=parent-collapsed] [data-toggle=click],
+[data-toggle=parent-open] [data-toggle=click] {
+	cursor: pointer;
+}
+
+
+[data-toggle=parent-collapsed] [data-toggle=click]:after {
+	content: " [open]";
+}
+
+[data-toggle=parent-open] [data-toggle=click]:hover:after {
+	content: " [collapse]"
+}
+
+[data-toggle=parent-collapsed] [data-toggle=click]:after,
+[data-toggle=parent-open] [data-toggle=click]:after {
+	color: #bbbbbb;
+	display: inline-block;
+	float: right;
+}

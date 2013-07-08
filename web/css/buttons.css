@@ -1,0 +1,80 @@
+@CHARSET "ISO-8859-1";
+
+
+.button {
+	display: inline-block;
+	padding: 2px 13px;
+	margin: 0 5px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #444444;
+	border: 1px solid white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	background: linear-gradient(-7deg, rgb(206, 206, 206), rgb(236, 236, 236));
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.button:active {
+	background: linear-gradient(-7deg, rgb(236, 236, 236), rgb(206, 206, 206));
+}
+
+.button:hover {
+	box-shadow: 0 0 5px rgba(150, 150, 150, 0.6);
+}
+
+.button-blue {
+	background: linear-gradient(-7deg, rgb(62, 164, 213), rgb(163, 225, 236));
+	color: white;
+	border: 1px solid white;
+}
+
+.button-blue:active {
+	background: linear-gradient(-7deg, rgb(163, 225, 236), rgb(62, 164, 213));
+}
+
+.button-red {
+	background: linear-gradient(-7deg, rgb(213, 62, 62), rgb(236, 181, 163));
+	color: #eeeeee;
+}
+
+.button-red:active {
+	background: linear-gradient(-7deg, rgb(236, 181, 163), rgb(213, 62, 62));
+}
+
+.button-red:hover {
+	box-shadow: 0 0 5px rgb(255, 160, 160);
+}
+
+.button-green {
+	background: linear-gradient(-7deg, rgb(40, 187, 46), rgb(111, 236, 126));
+	color: #eeeeee;
+}
+
+.button-green:active {
+	background: linear-gradient(-7deg, rgb(111, 236, 126), rgb(40, 187, 46));
+}
+
+.button-green:hover {
+	box-shadow: 0 0 5px rgb(160, 255, 160);
+}
+
+.button-fat {
+	font-size: 0.9em;
+	border-radius: 8px;
+	padding: 5px 18px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+form input[type=submit].button {
+	padding: 2px 13px;
+}
+
+form input[type=submit].button-fat {
+	font-size: 0.9em;
+	border-radius: 8px;
+	padding: 5px 18px;
+}
