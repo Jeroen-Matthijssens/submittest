@@ -1,4 +1,4 @@
-package org.tutskse.submittest;
+package org.tutske.submittest;
 
 import org.tutske.util.Counter;
 
